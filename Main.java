@@ -36,9 +36,9 @@ public class Main extends ListenerAdapter {
 					rollSides = Integer.valueOf(strArgs[1]);
 				}
 				channel.sendMessage("You rolled a " + (int)(Math.random() * rollSides + 1)).queue();
-			} else if (strArgs[0].equals("yeet")) { 
+			} else if (strArgs[0].equals("yeet")) { //responds to "yeet"
 				channel.sendMessage("YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET").queue();
-			} else if (strArgs[0].equals("help")) { 
+			} else if (strArgs[0].equals("help")) { //responds to "help" with the following options in "getRandomNo()"
 				String response = getRandomNo();
 				channel.sendMessage(response).queue();
 			} else if (event.getMessage().getContentRaw().toLowerCase().contains("make me mod")) { 
